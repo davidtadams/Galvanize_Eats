@@ -1,0 +1,198 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* source: http://stackoverflow.com/questions/7492062/css-overflow-scroll-always-show-vertical-scroll-bar */
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(to bottom right, rgb(238,166,32), rgb(131,62,0));
+}
+
+.titleBar {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.titleBar h1 {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  margin: 20px 100px;
+}
+
+.inputForm {
+  width: 50%;
+}
+
+.output {
+  width: 50%;
+}
+
+.menu {
+  background-color: white;
+  max-height: 220px;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.menuItem {
+  cursor: pointer;
+}
+
+.menu h4 {
+  margin: 5px 0px 5px 5px;
+  font-size: 1em;
+}
+
+.itemName {
+  display: inline-block;
+  margin: 10px 0px 10px 15px;
+}
+
+.itemPrice {
+  display: inline-block;
+  float: right;
+  margin: 10px 15px 10px 0px;
+}
+
+.inputForm label {
+  font-weight: 600;
+  font-size: 0.7em;
+  display: block;
+}
+
+.addItem {
+  margin: 15px 0px;
+}
+
+.numberInput {
+  float: left;
+  margin-right: 20px;
+}
+
+.addItem input {
+  width: 45px;
+  height: 30px;
+  font-size: 1.2em;
+}
+
+.addItem button {
+  border: none;
+  margin-top: 10px;
+  color: white;
+  background-color: rgb(70,93,151);
+  height: 40px;
+  width: 130px;
+  font-weight: 400;
+  font-size: 1em;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.3s ease 0s;
+}
+
+.addItem button:hover {
+  opacity: 0.75;
+}
+
+.deliverForm {
+  margin-top: 20px;
+}
+
+.deliverForm input {
+  display: block;
+  width: 98%;
+  height: 30px;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  background: rgb(249,255,172);
+}
+
+.deliverForm button {
+  border: none;
+  display: block;
+  margin-top: 10px;
+  color: white;
+  background-color: rgb(71,153,94);
+  height: 40px;
+  font-weight: 400;
+  font-size: 1em;
+  width: 100%;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.3s ease 0s;
+}
+
+.deliverForm button:hover {
+  opacity: 0.75;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 0px 20px;
+  padding: 10px;
+}
+
+.selectedItems {
+  flex-grow: 1;
+}
+
+.addedName {
+  display: inline-block;
+}
+
+.addedPrice {
+  display: inline-block;
+  float: right;
+}
+
+.totals {
+  text-align: right;
+  align-self: flex-end;
+}
+
+.totals p {
+  display: inline;
+  font-size: 0.8em;
+  margin-left: 10px;
+}
+
+.grandTotal {
+  font-weight: 800;
+}
+
+footer {
+  color: white;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 10px;
+}
+
+footer p {
+  display: inline;
+  margin: auto 10px;
+  font-weight: 300;
+  font-size: 0.75em;
+}

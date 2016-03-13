@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Galvanize Eats</title>
+    <link rel="icon" href="../media/food.ico" type="image/ico">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/orders.css">
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/orders.js"></script>
+  </head>
+  <body>
+    <header>
+      <section class="titleBar">
+        <h1>Galvanize Eats</h1>
+      </section>
+    </header>
+    <main>
+      <section class="inputForm">
+        <div class="menu">
+
+        </div>
+        <div class="addItem">
+          <form class="addItemForm" action="" method="get">
+            <div class="numberInput">
+              <label for="quantity">Quantity:</label>
+              <input type="number" name="quantity" value="1" min="1" max="99" id="quantity">
+            </div>
+            <button class="addButton" type="submit" name="addItem">Add Item</button>
+          </form>
+        </div>
+        <div class="deliverForm">
+          <label for="name">Name:</label>
+          <input type="text" name="name" value="" id="name">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" name="phone" value="" id="phone">
+          <label for="address">Address:</label>
+          <input type="text" name="address" value="" id="address">
+          <button class="deliverButton" type="button" name="button">Deliver It!</button>
+        </div>
+      </section>
+      <aside class="output">
+        <div class="selectedItems">
+
+        </div>
+        <div class="totals">
+          <div class="subtotal">
+            <p>Subtotal: </p>
+            <p>$0.00</p>
+          </div>
+          <div class="tax">
+            <p>Tax: </p>
+            <p>$0.00</p>
+          </div>
+          <div class="grandTotal">
+            <p>Grand Total:</p>
+            <p>$0.00</p>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <p><i class="fa fa-copyright"></i> Galvanize, 2015</p>
+      <p><i class="fa fa-fort-awesome"></i></p>
+      <p>Denver, Colorado</p>
+    </footer>
+  </body>
+</html>

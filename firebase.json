@@ -1,0 +1,8 @@
+{
+  "firebase": "galvanize-eats-da",
+  "public": "app",
+  "ignore": [
+    "firebase.json",
+    "**/node_modules/**"
+  ]
+}

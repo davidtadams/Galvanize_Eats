@@ -1,0 +1,23 @@
+{
+  "name": "galvanize-eats",
+  "version": "1.0.0",
+  "description": "Term 1 final assessment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidtadams/galvanize_Eats.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidtadams/galvanize_Eats/issues"
+  },
+  "homepage": "https://github.com/davidtadams/galvanize_Eats#readme",
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0"
+  }
+}
